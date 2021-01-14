@@ -10,19 +10,57 @@ var generateBtn = document.querySelector("#generate");
 // todo: make sure selection of criteria is included in password
 // todo: once generated, password is displayed in alert or written on page
 
-//Prompts (length, lowercase, uppercase, numbers, symbols):
 
-var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
-var confirmlowercase = confirm ("Would you like lowercase letters?");
-var confirmuppercase = confirm ("Would you like uppercase letters?");
-var confirmnumbers = confirm ("Would you like numbers?");
-var confirmsymbols = confirm ("Would you like random symbols?");
+//Prompt/Confirms (length, lowercase, uppercase, numbers, symbols):
+
+// Set Value for Prompts/Confirms
+
+// Set Password Length:
+
 
 
 // Generate Password Function:
 
-function generatePassword(){
-  
+
+
+
+
+function generatePassword(length, haslower, hasupper, hasnumber, hassymbols) {
+
+  var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
+
+  var confirmlowercase = confirm ("Would you like lowercase letters?");
+
+  var confirmuppercase = confirm ("Would you like uppercase letters?");
+
+  var confirmnumbers = confirm ("Would you like numbers?");
+
+  var confirmsymbols = confirm ("Would you like random symbols?");
+
+
+}
+
+//EventListner for Generate Button:
+
+generateBtn.addEventListener('click', ()=> {
+  var length = +setlength.value;
+  var haslower = confirmlowercase.value;
+  var hasupper = confirmuppercase.value;
+  var hasnumbers = confirmnumberscase.value;
+  var hassymbols = confirmsymbolscase.value;
+
+});
+
+
+// Values of Random Password
+
+const ranPassword = {
+  lower: ranLower,
+  upper: ranUpper,
+  number: ranNumber,
+  symbol: ranSymbol,
+};
+
 // Random Functions to get lowercase, uppercase, numbers, symbols:
 
   function ranLower(){
@@ -46,18 +84,14 @@ function generatePassword(){
 
   }
 
-}
-
-console.log(generatePassword());
-
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-}
+// }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword())
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword());
