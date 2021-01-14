@@ -12,65 +12,52 @@ var generateBtn = document.querySelector("#generate");
 
 //Prompts (length, lowercase, uppercase, numbers, symbols):
 
-function mycriteria() {
-  var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
-  var confirmlowercase = confirm ("Would you like lowercase letters?");
-  var confirmuppercase = confirm ("Would you like uppercase letters?");
-  var confirmnumbers = confirm ("Would you like numbers?");
-  var confirmsymbols = confirm ("Would you like random symbols?");
-}
-
-console.log (mycriteria());
-
-// Set length
+var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
+var confirmlowercase = confirm ("Would you like lowercase letters?");
+var confirmuppercase = confirm ("Would you like uppercase letters?");
+var confirmnumbers = confirm ("Would you like numbers?");
+var confirmsymbols = confirm ("Would you like random symbols?");
 
 
+// Generate Password Function:
 
-//Random Generators for lowercase, uppercase, numbers, symbols
-
-function ranLower(){
-  var lowercase = "abcdefghijklmnopqrstuvwxyz";
-  return lowercase[Math.floor(Math.random() * lowercase.length)];
-}
-
-function ranUpper(){
-  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  return uppercase[Math.floor(Math.random() * uppercase.length)];
-}
-
-function ranNumber(){
-  var numbers = "0123456789";
-  return numbers[Math.floor(Math.random() * numbers.length)];
-}
-
-function ranSymbol(){
-  var symbols = "!@#$%^&*()-_=+/?<>";
-  return symbols[Math.floor(Math.random() * symbols.length)];
-
-}
-
-console.log (ranLower());
+function generatePassword(){
   
-console.log (ranUpper());
+// Random Functions to get lowercase, uppercase, numbers, symbols:
 
-console.log (ranNumber());
+  function ranLower(){
+    var lowercase = "abcdefghijklmnopqrstuvwxyz";
+    return lowercase[Math.floor(Math.random() * lowercase.length)];
+  }
 
-console.log (ranSymbol());
+  function ranUpper(){
+    var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    return uppercase[Math.floor(Math.random() * uppercase.length)];
+  }
 
+  function ranNumber(){
+    var numbers = "0123456789";
+    return numbers[Math.floor(Math.random() * numbers.length)];
+  }
 
-  
+  function ranSymbol(){
+    var symbols = "!@#$%^&*()-_=+/?<>";
+    return symbols[Math.floor(Math.random() * symbols.length)];
 
+  }
 
+}
 
+console.log(generatePassword());
 
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
+  passwordText.value = password;
 
-// }
+}
 
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword())
