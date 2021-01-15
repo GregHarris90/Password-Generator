@@ -17,7 +17,7 @@ Homework assignment for Week 3 of Coding Bootcamp!
 
 - Once "Generate Password" button is pushed, a user will select parameters using the prompts provided on the webpage. 
 
-- First set the length of the password (minimum 8 characters and maximum 128 characters)
+- First set the length of the password (minimum 8 characters and maximum 128 characters).
 
 - Then confirm having lowercase letters, uppercase letters, numbers, and symbols added to their password (must select at least one of these criteria). 
 
@@ -48,12 +48,13 @@ Homework assignment for Week 3 of Coding Bootcamp!
 *Generate Password*
 ![Password](https://user-images.githubusercontent.com/73864182/104727756-bc837580-56ea-11eb-9b68-882f5d38a4ce.png)
 
+- Wasn't able to connect User Prompt Value to Generate Password Function!
 
 # Overall Conclusion
 
-I will be turning in this assignment incomplete, as I really struggled with the javascript logic and writing all the syntax. Talked with a TA about how I got ahead of myself on this one and made my code more complicated than it needed to be. 
+- I will be turning in this assignment incomplete, as I really struggled with the javascript logic and writing all the syntax. Talked with a TA about how I got ahead of myself on this one and made my code more complicated than it needed to be. 
 
-I ran out of time my so README won't have pictures yet and the primary functions of this application will still need work! This started to make more sense after going over it in office hours, but it's still not finished. I will continue to work on this project until I get everything working!
+- I ran out of time my so README won't have pictures yet and the primary functions of this application will still need work! This started to make more sense after going over it in office hours, but it's still not finished. I will continue to work on this project until I get everything working!
 
 EDIT: I worked on this Web Application (Password Generator) well into the night after class and speaking with a TA. 
 
