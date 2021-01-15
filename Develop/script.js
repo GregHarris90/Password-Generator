@@ -45,6 +45,21 @@ passwordEl.textContent = password
 console.log(password);
 
 
+// // Add event listener to generate button (PROVIDED)
+// generateBtn.addEventListener("click", writePassword());
+
+// Attach eventListner to Generate Button:
+generateBtn.addEventListener("click", function() {
+
+  //Run Generate Password Function:
+    generatePassword();
+  
+  });
+
+// ================================================================================================================ //
+
+//OLDER CODE BELOW:
+
 // Function to Generate Password:
 function generatePassword() {
 
@@ -68,8 +83,6 @@ console.log(confirmuppercase);
 console.log(confirmnumbers);
 console.log(confirmsymbols);
 
-
-
 // Write password to the #password input (PROVIDED)
 // function writePassword() {
 //   var password = generatePassword();
@@ -78,27 +91,7 @@ console.log(confirmsymbols);
 
 // }
 
-
 }
-
-// // Add event listener to generate button (PROVIDED)
-// generateBtn.addEventListener("click", writePassword());
-
-// Attach eventListner to Generate Button:
-generateBtn.addEventListener("click", function() {
-
-  //Run Generate Password Function:
-    generatePassword();
-  
-  });
-
-
-
-
-
-
-
-
 
 // ORIGINAL CODE: TA shared I was over complicating it!
 
