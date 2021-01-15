@@ -17,22 +17,26 @@ var generateBtn = document.querySelector("#generate");
 // Textarea for Password selector
 var passwordText = document.querySelector("#password");
 
-
+function getCharacter(characterSet) {
+  var randomIndex = Math.floor(Math.random() * characterSet.length)
+  return characterSet [randomIndex]
+}
 
 var lower = "abcdefghijklmnopqrstuvwxyz"
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var numbers = "0123456789"
 var symbols = "!@#$%^&*()-_=+/?<>"
 
-var characterSet = [lower,upper,numbers,symbols]
+var characters = [lower,upper,numbers,symbols]
 
 var password = ""
 
 var passwordLength = 8
 
-for(var i=0; i<8; i++){
-  var randomIndex = Math.floor(Math.random() * password.length)
-  password += characterSet[randomIndex]
+for(var i = 0; i < 8; i++) {
+  var randomIndex = Math.floor(Math.random() * characters.length)
+  var characterSet = characters [randomIndex]
+  password += getCharacter(characterSet)
 }
 
 var passwordEl = document.getElementById('password')
