@@ -11,17 +11,17 @@
 
 
 // DOM ELEMENTS:
-// Generate Button selector
+  // Generate Button selector
 var generateBtn = document.querySelector("#generate");
-
-// Textarea for Password selector
+  // Textarea for Password selector
 var passwordText = document.querySelector("#password");
-
+  // New Function for grabbing Random Characters
 function getCharacter(characterSet) {
   var randomIndex = Math.floor(Math.random() * characterSet.length)
   return characterSet [randomIndex]
 }
 
+// Password Variables
 var lower = "abcdefghijklmnopqrstuvwxyz"
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var numbers = "0123456789"
@@ -33,6 +33,7 @@ var password = ""
 
 var passwordLength = 8
 
+// For Loop grabbing Random Characters from Variables
 for(var i = 0; i < 8; i++) {
   var randomIndex = Math.floor(Math.random() * characters.length)
   var characterSet = characters [randomIndex]
@@ -43,10 +44,6 @@ var passwordEl = document.getElementById('password')
 passwordEl.textContent = password
 
 console.log(password);
-
-
-// // Add event listener to generate button (PROVIDED)
-// generateBtn.addEventListener("click", writePassword());
 
 // Attach eventListner to Generate Button:
 generateBtn.addEventListener("click", function() {
@@ -59,6 +56,9 @@ generateBtn.addEventListener("click", function() {
 // ================================================================================================================ //
 
 //OLDER CODE BELOW:
+
+// // (PROVIDED) Add event listener to generate button 
+// generateBtn.addEventListener("click", writePassword());
 
 // Function to Generate Password:
 function generatePassword() {
@@ -83,7 +83,7 @@ console.log(confirmuppercase);
 console.log(confirmnumbers);
 console.log(confirmsymbols);
 
-// Write password to the #password input (PROVIDED)
+// (PROVIDED) Write password to the #password input 
 // function writePassword() {
 //   var password = generatePassword();
 //
@@ -93,7 +93,9 @@ console.log(confirmsymbols);
 
 }
 
-// ORIGINAL CODE: TA shared I was over complicating it!
+
+// ORIGINAL CODE for Password Generator: 
+// TA shared I was over complicating it!
 
 // // Variable for Values of Random Password:
 

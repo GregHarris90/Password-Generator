@@ -22,4 +22,6 @@ Homework assignment for Week 3 of Coding Bootcamp!
 
 # Overall Conclusion
 
-I will be turning in this assignment incomplete, as I really struggled with the javascript logic and writing all the syntax. Talked with a TA about how I got ahead of myself on this one and made my code more complicated than it needed to be. Because I ran out of time my README won't have pictures yet and the primary functions of this application will still need work! This started to make more sense after going over in in office hours, but it's still not finished. I will continue to work on this project until I get everything working. 
+I will be turning in this assignment incomplete, as I really struggled with the javascript logic and writing all the syntax. Talked with a TA about how I got ahead of myself on this one and made my code more complicated than it needed to be. 
+
+I ran out of time my README won't have pictures yet and the primary functions of this application will still need work! This started to make more sense after going over it in office hours, but it's still not finished. I will continue to work on this project until I get everything working!
