@@ -14,11 +14,10 @@
   // Generate Button selector
 var generateBtn = document.querySelector("#generate");
 
-
 // Attach eventListner to Generate Button:
 generateBtn.addEventListener("click", function() {
 
-  //Run Generate Password Function:
+  //OnClick Run Generate Password Function:
     generatePassword();
   
   });
@@ -26,26 +25,44 @@ generateBtn.addEventListener("click", function() {
 // Function to Generate Password:
 function generatePassword() {
 
-  // 1) Write if/else to confirm!
-  // 2) Write For loops!
-  // 3) Write Index Array!
-  
+  // Password Criteria (prompts/confirms)
+
+  // Set Length Parameter
+  var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
+    
+  while (setlength <=8 || setlength >=128){
+    alert("Length of password must be between 8 and 128 characters!");
     var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
-    // if (setlength) {setlength = 
-    // }
-    var confirmlowercase = confirm ("Would you like lowercase letters?");
-    // if (confirmlowercase) {confirmlowercase = true
-    // }
-    var confirmuppercase = confirm ("Would you like uppercase letters?");
-    var confirmnumbers = confirm ("Would you like numbers?");
-    var confirmsymbols = confirm ("Would you like random symbols?");
+  }
+
+  // Confirm Lowercase
+  var confirmlowercase = confirm ("Would you like lowercase letters?");
+ 
+  // Confrim Uppercase
+  var confirmuppercase = confirm ("Would you like uppercase letters?");
+
+  // Confirm Numbers
+  var confirmnumbers = confirm ("Would you like numbers?");
+
+  // Confirm Symbols
+  var confirmsymbols = confirm ("Would you like random symbols?");
   
   console.log(setlength);
   console.log(confirmlowercase);
   console.log(confirmuppercase);
   console.log(confirmnumbers);
   console.log(confirmsymbols);
-  
+
+  var myCriteria = {
+    length: setlength,
+    lowercase: confirmlowercase,
+    uppercase: confirmuppercase,
+    numbers: confirmnumbers,
+    symbols: confirmsymbols
+  }
+
+  console.log(myCriteria);
+
   // New Function for grabbing Random Characters
   function getCharacter(characterSet) {
     var randomIndex = Math.floor(Math.random() * characterSet.length)
@@ -58,12 +75,12 @@ function generatePassword() {
   var numbers = "0123456789"
   var symbols = "!@#$%^&*()-_=+/?<>"
   
+  // Variable of Characters (Array of Password Criteria)
   var characters = [lower,upper,numbers,symbols]
   
+  // Variable of empy=ty string for password
   var password = ""
-  
-  var passwordLength = 8
-  
+
   // For Loop grabbing Random Characters from Variables
   for(var i = 0; i < 8; i++) {
     var randomIndex = Math.floor(Math.random() * characters.length)
@@ -76,8 +93,7 @@ function generatePassword() {
   
   console.log(password);
   
-  
-  }
+}
   
   
 
