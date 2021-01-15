@@ -53,15 +53,15 @@ function generatePassword() {
   console.log(confirmnumbers);
   console.log(confirmsymbols);
 
-  var myCriteria = {
-    length: +setlength,
-    lowercase: confirmlowercase,
-    uppercase: confirmuppercase,
-    numbers: confirmnumbers,
-    symbols: confirmsymbols
-  }
+  // var myCriteria = {
+  //   length: setlength,
+  //   lowercase: confirmlowercase,
+  //   uppercase: confirmuppercase,
+  //   numbers: confirmnumbers,
+  //   symbols: confirmsymbols
+  // }
 
-  console.log(myCriteria);
+  // console.log(myCriteria);
 
   // New Function for grabbing Random Characters
   function getCharacter(characterSet) {
@@ -77,6 +77,8 @@ function generatePassword() {
   
   // Variable of Characters (Array of Password Criteria)
   var characters = [lower,upper,numbers,symbols]
+  
+  // Password Length
   
   // Variable of empy=ty string for password
   var password = ""
