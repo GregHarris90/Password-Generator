@@ -30,7 +30,7 @@ function generatePassword() {
   // Set Length Parameter
   var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
     
-  while (setlength <=8 || setlength >=128){
+  while (setlength <=7 || setlength >=129){
     alert("Length of password must be between 8 and 128 characters!");
     var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
   }
@@ -54,7 +54,7 @@ function generatePassword() {
   console.log(confirmsymbols);
 
   var myCriteria = {
-    length: setlength,
+    length: +setlength,
     lowercase: confirmlowercase,
     uppercase: confirmuppercase,
     numbers: confirmnumbers,
