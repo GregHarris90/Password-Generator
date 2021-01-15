@@ -1,7 +1,3 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-
 // TODO SECTION:
 // todo: create prompts for password criteria
 // todo: prompt for length of password ( at least 8 characters, no more than 128 characters)
@@ -11,54 +7,61 @@ var generateBtn = document.querySelector("#generate");
 // todo: once generated, password is displayed in alert or written on page
 
 
-//Prompt/Confirms (length, lowercase, uppercase, numbers, symbols):
-
-// Set Value for Prompts/Confirms
-
-// Set Password Length:
+// Assignment Code
 
 
+// DOM ELEMENTS:
+// Generate Button selector
 
-// Generate Password Function:
+var generateBtn = document.querySelector("#generate");
+
+// Textarea for Password selector
+
+var passwordText = document.querySelector("#password");
 
 
+// Generates Password:
 
-
-
-function generatePassword(length, haslower, hasupper, hasnumber, hassymbols) {
+function generatePassword() {
 
   var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
-
   var confirmlowercase = confirm ("Would you like lowercase letters?");
-
   var confirmuppercase = confirm ("Would you like uppercase letters?");
-
   var confirmnumbers = confirm ("Would you like numbers?");
-
   var confirmsymbols = confirm ("Would you like random symbols?");
 
+console.log(setlength);
+console.log(confirmlowercase);
+console.log(confirmuppercase);
+console.log(confirmnumbers);
+console.log(confirmsymbols);
+
+// Write For loop!
+
+// Write Index Array!
 
 }
 
-//EventListner for Generate Button:
+// Attach eventListner to Generate Button:
 
-generateBtn.addEventListener('click', ()=> {
-  var length = +setlength.value;
-  var haslower = confirmlowercase.value;
-  var hasupper = confirmuppercase.value;
-  var hasnumbers = confirmnumberscase.value;
-  var hassymbols = confirmsymbolscase.value;
+generateBtn.addEventListener("click", function() {
+
+  generatePassword();
+  var length = setlength.value;
+  var lower = confirmlowercase.value;
+  var upper = confirmuppercase.value;
+  var numbers = confirmnumbers.value;
+  var symbols = confirmsymbols.value;
 
 });
 
+// Variable for Values of Random Password:
 
-// Values of Random Password
-
-const ranPassword = {
-  lower: ranLower,
-  upper: ranUpper,
-  number: ranNumber,
-  symbol: ranSymbol,
+var ranPassword = {
+  lower : ranLower,
+  upper : ranUpper,
+  number : ranNumber,
+  symbol : ranSymbol,
 };
 
 // Random Functions to get lowercase, uppercase, numbers, symbols:
@@ -84,11 +87,16 @@ const ranPassword = {
 
   }
 
+  console.log(ranLower());
+  console.log(ranUpper());
+  console.log(ranNumber());
+  console.log(ranSymbol());
+
+  
 // Write password to the #password input
 // function writePassword() {
 //   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
+//
 //   passwordText.value = password;
 
 // }
