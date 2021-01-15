@@ -22,46 +22,54 @@ generateBtn.addEventListener("click", function() {
   
   });
 
+var setlength = "";
+var confirmlowercase;
+var confirmuppercase;
+var confirmnumbers;
+var confirmsymbols;
+
 // Function to Generate Password:
 function generatePassword() {
 
   // Password Criteria (prompts/confirms)
 
-  // Set Length Parameter
+  // Set Length 
   var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
-    
+  
+  // Length Parameters
   while (setlength <=7 || setlength >=129){
     alert("Length of password must be between 8 and 128 characters!");
     var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
   }
 
+  // Password Criteria
+
   // Confirm Lowercase
   var confirmlowercase = confirm ("Would you like lowercase letters?");
- 
   // Confrim Uppercase
   var confirmuppercase = confirm ("Would you like uppercase letters?");
-
   // Confirm Numbers
   var confirmnumbers = confirm ("Would you like numbers?");
-
   // Confirm Symbols
   var confirmsymbols = confirm ("Would you like random symbols?");
+
+  while (confirmlowercase === false && confirmuppercase === false && confirmnumbers === false && confirmsymbols === false) {
+    alert("Must select at least one (lower, upper, numbers, symbols!)")
+    // Confirm Lowercase
+    var confirmlowercase = confirm ("Would you like lowercase letters?");
+    // Confrim Uppercase
+    var confirmuppercase = confirm ("Would you like uppercase letters?");
+    // Confirm Numbers
+    var confirmnumbers = confirm ("Would you like numbers?");
+    // Confirm Symbols
+    var confirmsymbols = confirm ("Would you like random symbols?");
+  }
   
   console.log(setlength);
   console.log(confirmlowercase);
   console.log(confirmuppercase);
   console.log(confirmnumbers);
   console.log(confirmsymbols);
-
-  // var myCriteria = {
-  //   length: setlength,
-  //   lowercase: confirmlowercase,
-  //   uppercase: confirmuppercase,
-  //   numbers: confirmnumbers,
-  //   symbols: confirmsymbols
-  // }
-
-  // console.log(myCriteria);
 
   // New Function for grabbing Random Characters
   function getCharacter(characterSet) {
@@ -79,7 +87,7 @@ function generatePassword() {
   var characters = [lower,upper,numbers,symbols]
   
   // Password Length
-  
+
   // Variable of empy=ty string for password
   var password = ""
 
