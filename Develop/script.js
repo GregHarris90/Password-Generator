@@ -22,27 +22,21 @@ generateBtn.addEventListener("click", function() {
   
   });
 
-var setlength = "";
-var confirmlowercase;
-var confirmuppercase;
-var confirmnumbers;
-var confirmsymbols;
 
 // Function to Generate Password:
 function generatePassword() {
 
-  // Password Criteria (prompts/confirms)
+  // Password Criteria (Length Prompt)
 
   // Set Length 
   var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
-  
   // Length Parameters
   while (setlength <=7 || setlength >=129){
     alert("Length of password must be between 8 and 128 characters!");
     var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
   }
 
-  // Password Criteria
+  // Password Criteria (Confirm Prompts)
 
   // Confirm Lowercase
   var confirmlowercase = confirm ("Would you like lowercase letters?");
@@ -86,7 +80,12 @@ function generatePassword() {
   // Variable of Characters (Array of Password Criteria)
   var characters = [lower,upper,numbers,symbols]
   
-  // Password Length
+  // Password Criteria
+  // var setlength = "";
+  // var confirmlowercase;
+  // var confirmuppercase;
+  // var confirmnumbers;
+  // var confirmsymbols;
 
   // Variable of empy=ty string for password
   var password = ""
@@ -103,6 +102,7 @@ function generatePassword() {
   
   console.log(password);
   
+
 }
   
   
