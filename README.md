@@ -15,13 +15,13 @@ Homework assignment for Week 3 of Coding Bootcamp!
 
 # User Story
 
-- Once "Generate Password" button is pushed, a user will select parameters using the prompts provided on the webpage. 
+- Once "Generate Password" button is pushed, a user will set criteria using the prompts provided on the webpage. 
 
 - First set the length of the password (minimum 8 characters and maximum 128 characters).
 
-- Then confirm having lowercase letters, uppercase letters, numbers, and symbols added to their password (must select at least one of these criteria). 
+- Then confirm having lowercase letters, uppercase letters, numbers, and symbols included in their password (must select at least one of these criteria). 
 
-- After answering these questions a randomized password should appear in the textbox at the center of the webpage!
+- After answering these prompts a randomized password should appear in the textbox at the center of the webpage!
 
 # Password Generator
 
@@ -50,16 +50,26 @@ Homework assignment for Week 3 of Coding Bootcamp!
 
 - Wasn't able to connect User Prompt Value to Generate Password Function!
 
+### 01/16/21
+EDIT: Was finally able to figure how to connect the prompts for the password criteria to the generate password function!
+
 # Overall Conclusion
 
+### 01/14/21
 - I will be turning in this assignment incomplete, as I really struggled with the javascript logic and writing all the syntax. Talked with a TA about how I got ahead of myself on this one and made my code more complicated than it needed to be. 
 
 - I ran out of time my so README won't have pictures yet and the primary functions of this application will still need work! This started to make more sense after going over it in office hours, but it's still not finished. I will continue to work on this project until I get everything working!
 
-EDIT: I worked on this Web Application (Password Generator) well into the night after class and speaking with a TA. 
+### 01/15/21
+EDIT 1: I worked on this Web Application (Password Generator) well into the night after class and speaking with a TA. 
 
 I was able to finish my prompts for the password parameters and was able to rebuild the main generator function. I also added images of what I was able to get done. 
 
 The last part that's still not working is connecting these values from the user prompts to the password generator function.
 
 *I will keep working on this tomorrow and see if I can figure it out!*
+
+### 01/16/21
+EDIT 2: Spent all day Friday reviewing the Javascript and working on my Password Generator. I was finally able to get the setlength working as well as the other criteria prompts. This homework assignment was far more difficult than the others. 
+
+I'm going to schedule a meeting with a tutor and continued practicing this section. But I'm glad I was finally able to figure it out and get everything working!
