@@ -70,6 +70,8 @@ The last part that's still not working is connecting these values from the user 
 *I will keep working on this tomorrow and see if I can figure it out!*
 
 ### 01/16/21
-EDIT 2: Spent all day Friday reviewing the Javascript and working on my Password Generator. I was finally able to get the setlength working as well as the other criteria prompts. This homework assignment was far more difficult than the others. 
+EDIT 2: Spent all day Friday reviewing the Javascript and working on my Password Generator. I was finally able to get the setlength working as well as the other criteria prompts. 
 
-I'm going to schedule a meeting with a tutor and continued practicing this section. But I'm glad I was finally able to figure it out and get everything working!
+Overall this homework assignment was far more difficult than the others. And so I'm going to schedule a meeting with a tutor and continue practicing this section. 
+
+But I'm really glad I was finally able to figure it all out and get everything working! 
