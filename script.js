@@ -16,12 +16,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Attach eventListner to Generate Button:
 generateBtn.addEventListener("click", function() {
-
   //OnClick Run Generate Password Function:
     generatePassword();
   
   });
-
 
 // Function to Generate Password:
 function generatePassword() {
@@ -36,30 +34,24 @@ function generatePassword() {
     var setlength = prompt("How long would you like your password to be?","Between 8 and 128 characters");
   }
 
+  console.log(setlength);
+
   // Password Criteria (Confirm Prompts)
 
-  // Confirm Lowercase
   var confirmlowercase = confirm ("Would you like lowercase letters?");
-  // Confrim Uppercase
   var confirmuppercase = confirm ("Would you like uppercase letters?");
-  // Confirm Numbers
   var confirmnumbers = confirm ("Would you like numbers?");
-  // Confirm Symbols
   var confirmsymbols = confirm ("Would you like random symbols?");
 
+  // If ALL False ask confirm prompts again with alert
   while (confirmlowercase === false && confirmuppercase === false && confirmnumbers === false && confirmsymbols === false) {
-    alert("Must select at least one (lower, upper, numbers, symbols!)")
-    // Confirm Lowercase
+    alert("Must select at least one (lower, upper, numbers, symbols!)");
     var confirmlowercase = confirm ("Would you like lowercase letters?");
-    // Confrim Uppercase
     var confirmuppercase = confirm ("Would you like uppercase letters?");
-    // Confirm Numbers
     var confirmnumbers = confirm ("Would you like numbers?");
-    // Confirm Symbols
     var confirmsymbols = confirm ("Would you like random symbols?");
   }
   
-  console.log(setlength);
   console.log(confirmlowercase);
   console.log(confirmuppercase);
   console.log(confirmnumbers);
@@ -79,19 +71,12 @@ function generatePassword() {
   
   // Variable of Characters (Array of Password Criteria)
   var characters = [lower,upper,numbers,symbols]
-  
-  // Password Criteria
-  // var setlength = "";
-  // var confirmlowercase;
-  // var confirmuppercase;
-  // var confirmnumbers;
-  // var confirmsymbols;
 
-  // Variable of empy=ty string for password
+  // Variable of empyty string for password
   var password = ""
 
   // For Loop grabbing Random Characters from Variables
-  for(var i = 0; i < 8; i++) {
+  for(var i = 0; i < setlength; i++) {
     var randomIndex = Math.floor(Math.random() * characters.length)
     var characterSet = characters [randomIndex]
     password += getCharacter(characterSet)
@@ -102,9 +87,7 @@ function generatePassword() {
   
   console.log(password);
   
-
 }
-  
   
 
 // ================================================================================================== //
