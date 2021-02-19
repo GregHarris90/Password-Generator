@@ -5,13 +5,22 @@ Homework assignment for Week 3 of Coding Bootcamp!
 ### Table of Contents 
 
 1) The Repository
-2) User Story
-3) Password Generator
-4) Overall Conclusion
+2) Technology Used
+3) User Story
+4) Password Generator
+5) Overall Conclusion
 
 # The Repository
 
 - This repository is for a web application to generate a randomized password after setting certain criteria. 
+
+*LIVE LINK TO APPLICATION*
+
+https://gregharris90.github.io/Password-Generator/
+
+# Technology Used
+
+- For this project I built the structure of the application using basic HTML and CSS, then created the functionality of generating a random password using JavaScript.
 
 # User Story
 
@@ -22,6 +31,7 @@ Homework assignment for Week 3 of Coding Bootcamp!
 - Then confirm having lowercase letters, uppercase letters, numbers, and symbols included in their password (must select at least one of these criteria). 
 
 - After answering these prompts a randomized password should appear in the textbox at the center of the webpage!
+
 
 # Password Generator
 
@@ -49,6 +59,11 @@ Homework assignment for Week 3 of Coding Bootcamp!
 ![Password](https://user-images.githubusercontent.com/73864182/104727756-bc837580-56ea-11eb-9b68-882f5d38a4ce.png)
 
 - Wasn't able to connect User Prompt Value to Generate Password Function!
+
+## Contact Info:
+
+- Name: Greg Harris
+- Email: ghart.productions@gmail.com
 
 ### 01/16/21
 EDIT: Was finally able to figure how to connect the prompts for the password criteria to the generate password function!
