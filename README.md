@@ -63,7 +63,7 @@ https://gregharris90.github.io/Password-Generator/
 ## Contact Info:
 
 - Name: Greg Harris
-- Email: ghart.productions@gmail.com
+- Email: ghcoder90@gmail.com
 
 ### 01/16/21
 EDIT: Was finally able to figure how to connect the prompts for the password criteria to the generate password function!
