@@ -1,7 +1,5 @@
 # Password-Generator
 
-Homework assignment for Week 3 of Coding Bootcamp!
-
 ### Table of Contents 
 
 1) The Repository
